@@ -27,7 +27,6 @@ int: ORG_NBR = N0*1000 + N1*100 +N2*10 +N3*1;
 
 
 % KS repsents the counts.
-
 set of int: KS = 0..K-1;
 
 % LENGTH repsents the digts indices.
