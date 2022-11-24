@@ -39,10 +39,10 @@ A "increase by one" operation increases a digit by one.
 Example:
 with N=6855 and K=7 the maxium possible number is 9985. 
 We see that: 
-The first digit N[0]=6 have used three "increase by one" to become 9. 
-The second digit N[1]=8 have used one "increase by one" to become 9. 
-The third digit N[2]=5 is have used three  "increase by one" to become 8. 
-The fourth digit N[2]=5 is have used zero  "increase by one". 
+The first digit N[0]=6 have used three "increase by one" operations to become 9. 
+The second digit N[1]=8 have used one "increase by one" operations  to become 9. 
+The third digit N[2]=5  have used three "increase by one" operations to become 8. 
+The fourth digit N[2]=5 have used zero "increase by one" operations. 
 This can be represented by a matrix: 
 
 [
