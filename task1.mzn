@@ -26,10 +26,10 @@ int: N3 = 5; % =  N[3]
 int: ORG_NBR = N0*1000 + N1*100 +N2*10 +N3*1;
 
 
-% KS repsents the counts.
+% KS repsents the indices of increases.
 set of int: KS = 0..K-1;
 
-% LENGTH repsents the digts indices.
+% LENGTH repsents indices of digts.
 set of int: LENGTH = 0..3;
 
 /*
@@ -67,10 +67,8 @@ A "increase by one" operation can only be spended by one digt at most.
 This modeled by at_most predicate: In one column at most one row can take the value 1. 
 
 */
-array[LENGTH,KS] of var int:t;
+array[LENGTH,KS] of var 0..1:t;
 
-
-constraint forall(i in LENGTH,j in KS)(0 <= t[i,j] /\  t[i,j] <= 1);
 
 
 constraint N0 +     sum(t[0,KS]) <= 9;
